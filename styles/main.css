@@ -1,0 +1,218 @@
+/**Fonts**/
+@font-face {
+  font-family: "Domine";
+  src: url("../assets/fonts/Domine-Regular.woff");
+}
+
+@font-face {
+  font-family: "Domine";
+  src: url("../assets/fonts/Domine-Bold.woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Regular.woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Bold.woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Italic.woff");
+  font-style: italic;
+}
+
+/*Variables*/
+/*Fonts*/
+/*Colors*/
+/*Fonts size*/
+/*General*/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #1E1E1E;
+  color: #ddd;
+  font-size: 0.8em;
+  font-family: "Montserrat";
+  margin: 0px;
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: "Domine";
+}
+
+body h1 {
+  font-size: 3em;
+}
+
+body h2 {
+  font-size: 2.6em;
+}
+
+body h3 {
+  font-size: 2.2em;
+}
+
+body h4 {
+  font-size: 1.8em;
+}
+
+body h5 {
+  font-size: 1.4em;
+}
+
+body h6 {
+  font-size: 1.2em;
+}
+
+body a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+body a:hover, body a :active, body a :focus {
+  color: white;
+  text-decoration: underline;
+}
+
+body .button {
+  background-color: #294673;
+  color: #ddd;
+  border-color: #294673;
+  border-style: none;
+  border-radius: 8px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 10px 20px;
+}
+
+body .button:hover {
+  cursor: pointer;
+  background-color: #213e69;
+}
+
+header {
+  background-color: #724b2f;
+}
+
+.top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top-bar .logo {
+  margin: 1%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.top-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0em 2em;
+}
+
+.top-bar ul.navbar {
+  width: 40%;
+}
+
+.top-bar ul.login {
+  width: 20%;
+}
+
+.top-bar ul.login p {
+  margin-left: 6px;
+  display: inline;
+}
+
+.top-bar ul li {
+  padding: 0% 3%;
+  font-size: 1.2em;
+}
+
+.banner {
+  background-image: linear-gradient(80deg, #301b0744, #301b07);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1%;
+}
+
+.banner .slogan {
+  line-height: 2em;
+}
+
+.searchbar {
+  background-color: #724b2f;
+  padding: 0.5em 1em;
+}
+
+.searchbar form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.searchbar form .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.searchbar #search {
+  background-color: #724b2f;
+  border: none;
+  color: #ddd;
+  margin: 0em 1em;
+}
+
+.searchbar #search:active, .searchbar #search:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.searchbar label {
+  margin: 0em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=main.css.map */

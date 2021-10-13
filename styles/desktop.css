@@ -1,0 +1,9 @@
+@media screen and (min-width: 1200px) {
+  .searchbar {
+    width: auto;
+  }
+  .searchbar form {
+    width: 33vw;
+  }
+}
+/*# sourceMappingURL=desktop.css.map */
