@@ -61,10 +61,8 @@ $p-small: 0.6em;
 
 
 /*General*/
-html {
-    box-sizing: border-box;
-}
 body {
+    box-sizing: border-box;
     background-color: $background;
     color: $text;
     font-size: $p-medium;
@@ -113,8 +111,35 @@ body {
             background-color: $button-hover;
         }
     }
+    .card {
+        background-image: $gradient-black;
+        padding: 1.5em;
+        margin: 0.5em;
+        flex-basis: 33%;
+        .tag {
+            background-color: $primary;
+            padding: 0.5em 1.4em;
+        }
+        .card-img {
+            width: auto;
+            margin-top: 1.2em;
+            overflow: hidden;
+            height: 15rem; 
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        h3 {
+            font-size: $h5;
+        }
+    }
+    .card-large {
+        flex-basis: calc(66% + 4em);
+    }
 }
 
+/*Header*/
 header {
     background-color: $secondary;
 }
@@ -186,6 +211,28 @@ header {
         margin: 0em 1em;
         display: flex;
         align-items: center;
+    }
+}
+
+/*Main*/
+.wrapper {
+    margin: 5%;
+    display: flex;
+    .content {
+        padding-right: 4%;
+        section {
+            display: flex;
+            flex-direction: column;
+            .section-title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .section-body {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
     }
 }
 
