@@ -9,7 +9,6 @@ body {
     font-family: $p-font;
     margin: 0px;
     line-height: 2em;
-
     h1, h2, h3, h4, h5, h6 {
         font-family: $h-font;
     }
@@ -148,9 +147,8 @@ header {
         }
         &.login {
             width: 20%;
-            p {
+            span {
                 margin-left: 0.5em;
-                display: inline;
             }
         }
         li {

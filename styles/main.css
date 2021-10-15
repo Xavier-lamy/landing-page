@@ -256,9 +256,8 @@ header {
   width: 20%;
 }
 
-.top-bar ul.login p {
+.top-bar ul.login span {
   margin-left: 0.5em;
-  display: inline;
 }
 
 .top-bar ul li {
@@ -585,7 +584,7 @@ footer .copyright small {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media (max-width: 999px) {
   .mobile-hidden {
     display: none;
   }
