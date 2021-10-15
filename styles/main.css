@@ -2,21 +2,6 @@
 /*Fonts*/
 /*Colors*/
 /*Fonts size*/
-@media screen and (max-width: 992px) {
-  .mobile-hidden {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .searchbar {
-    width: auto;
-  }
-  .searchbar form {
-    width: 33vw;
-  }
-}
-
 /**Fonts**/
 @font-face {
   font-family: "Domine";
@@ -586,5 +571,23 @@ footer .copyright {
 
 footer .copyright small {
   padding: 2em 2em 1em 1em;
+}
+
+@media screen and (min-width: 1200px) {
+  .searchbar {
+    width: auto;
+  }
+  .searchbar form {
+    width: 33vw;
+  }
+  body .card .card-img, body .card-lg .card-img, body-lg .card-img {
+    height: 20em;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mobile-hidden {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

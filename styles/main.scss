@@ -1,4 +1,4 @@
-@import 'partials/variables', 'partials/mobile', 'partials/desktop', 'partials/fonts';
+@import 'partials/variables', 'partials/fonts';
 
 /*General*/
 body {
@@ -370,3 +370,5 @@ footer {
         }
     }
 }
+
+@import 'partials/desktop', 'partials/mobile';

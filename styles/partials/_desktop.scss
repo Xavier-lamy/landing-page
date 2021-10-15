@@ -5,4 +5,11 @@
             width: 33vw;
         }
     }
+    body {
+        .card, &-lg {
+            .card-img {
+                height: 20em;  
+            }
+        }
+    }
 }
