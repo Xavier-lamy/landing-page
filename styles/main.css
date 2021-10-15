@@ -1,3 +1,22 @@
+/*Variables*/
+/*Fonts*/
+/*Colors*/
+/*Fonts size*/
+@media screen and (max-width: 992px) {
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .searchbar {
+    width: auto;
+  }
+  .searchbar form {
+    width: 33vw;
+  }
+}
+
 /**Fonts**/
 @font-face {
   font-family: "Domine";
@@ -27,10 +46,6 @@
   font-style: italic;
 }
 
-/*Variables*/
-/*Fonts*/
-/*Colors*/
-/*Fonts size*/
 /*General*/
 body {
   -webkit-box-sizing: border-box;
