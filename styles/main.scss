@@ -284,6 +284,7 @@ aside {
     }
     &.contact-form {
         form {
+            margin-top: 2em;
             .names, .mail, .message {
                 label {
                     display: none;

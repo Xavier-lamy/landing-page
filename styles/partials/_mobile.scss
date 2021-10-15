@@ -2,6 +2,50 @@
     .mobile-hidden {
         display: none;
     }
+    .wrapper {
+        flex-direction: column;
+    }
+    aside {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0em;
+        .sidebar, .sidebar:first-child {
+            width: 100%;
+            margin: 3em 0.3em;
+            &.contact-form {
+                .names {
+                    flex-direction: column;
+                    input {
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .company {
+            order: 2;
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-end;
+            justify-content: space-between;
+            .newsletter {
+                order: 2;
+            }
+            .logo, p {
+                order: 1;
+            }
+        }
+        .infos {
+            order: 1;
+            width: 100%;
+        }
+        .copyright {
+            order: 3;
+            align-items: flex-end;
+        }
+    }
 }
 
 @media (max-width: 768px) {
