@@ -99,8 +99,7 @@ body {
             }
         }
         &-lg {
-            @extend .card;
-            flex-basis: calc(65%);
+            flex-basis: 65%;
             .button-lg {
                 margin: 0% 25%;
             }
