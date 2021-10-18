@@ -6,11 +6,11 @@ body {
     background-color: $background;
     color: $text;
     font-size: $p-medium;
-    font-family: $p-font;
+    font-family: $p-font, sans-serif;
     margin: 0em;
     line-height: 2em;
     h1, h2, h3, h4, h5, h6 {
-        font-family: $h-font;
+        font-family: $h-font, serif;
     }
     h1 {
         font-size: $h1;

@@ -43,13 +43,13 @@ body {
   background-color: #1E1E1E;
   color: #ddd;
   font-size: 0.8em;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   margin: 0em;
   line-height: 2em;
 }
 
 body h1, body h2, body h3, body h4, body h5, body h6 {
-  font-family: "Domine";
+  font-family: "Domine", serif;
 }
 
 body h1 {
