@@ -90,7 +90,7 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0em;
   line-height: 2em;
-  /*Animation: underline nav items when hover*/
+  /*Animation: underline when hover*/
 }
 
 body h1, body h2, body h3, body h4, body h5, body h6 {
@@ -131,13 +131,13 @@ body a:hover, body a :active, body a :focus {
   text-decoration: underline;
 }
 
-body .navbar a, body .login span, body .contacts span, body .about a, body .follow span {
+body .navbar a, body .login span, body .contacts span, body .about a, body .follow span, body .forum-block a {
   display: inline-block;
   position: relative;
   text-decoration: none;
 }
 
-body .navbar a:after, body .login span:after, body .contacts span:after, body .about a:after, body .follow span:after {
+body .navbar a:after, body .login span:after, body .contacts span:after, body .about a:after, body .follow span:after, body .forum-block a:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -155,7 +155,7 @@ body .navbar a:after, body .login span:after, body .contacts span:after, body .a
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
-body .navbar a:hover:after, body .login span:hover:after, body .contacts span:hover:after, body .about a:hover:after, body .follow span:hover:after {
+body .navbar a:hover:after, body .login span:hover:after, body .contacts span:hover:after, body .about a:hover:after, body .follow span:hover:after, body .forum-block a:hover:after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transform-origin: bottom left;

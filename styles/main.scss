@@ -47,8 +47,8 @@ body {
             text-decoration: underline;
         }
     }
-    /*Animation: underline nav items when hover*/
-    .navbar a, .login span, .contacts span, .about a, .follow span {
+    /*Animation: underline when hover*/
+    .navbar a, .login span, .contacts span, .about a, .follow span, .forum-block a {
         display: inline-block;
         position: relative;
         text-decoration: none;
@@ -69,6 +69,7 @@ body {
             transform-origin: bottom left;
         }
     }
+
     ul {
         list-style: none;
     }
