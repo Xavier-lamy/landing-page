@@ -90,6 +90,7 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0em;
   line-height: 2em;
+  /*Animation: underline nav items when hover*/
 }
 
 body h1, body h2, body h3, body h4, body h5, body h6 {
@@ -130,6 +131,37 @@ body a:hover, body a :active, body a :focus {
   text-decoration: underline;
 }
 
+body .navbar a, body .login span, body .contacts span, body .about a, body .follow span {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+
+body .navbar a:after, body .login span:after, body .contacts span:after, body .about a:after, body .follow span:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 0.1em;
+  bottom: 0;
+  left: 0;
+  background-color: #ddd;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+body .navbar a:hover:after, body .login span:hover:after, body .contacts span:hover:after, body .about a:hover:after, body .follow span:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
 body ul {
   list-style: none;
 }
@@ -137,19 +169,24 @@ body ul {
 body .button, body button {
   background-color: #294673;
   color: #ddd;
-  border-color: #294673;
   border-style: none;
   border-radius: 1.6em;
   -webkit-box-shadow: none;
           box-shadow: none;
   display: inline-block;
   padding: 0.6em 2.1em;
+  -webkit-transition: background-color 0.2s ease-in, -webkit-transform 0.2s ease-in;
+  transition: background-color 0.2s ease-in, -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, background-color 0.2s ease-in;
+  transition: transform 0.2s ease-in, background-color 0.2s ease-in, -webkit-transform 0.2s ease-in;
 }
 
 body .button:hover, body button:hover {
   cursor: pointer;
   background-color: #213e69;
   text-decoration: none;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
 }
 
 body .button.button-lg, body button.button-lg {
@@ -314,38 +351,6 @@ header {
 .top-bar ul li {
   padding: 0% 3%;
   font-size: 1.2em;
-  /*Animation: underline nav items when hover*/
-}
-
-.top-bar ul li a {
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-}
-
-.top-bar ul li a:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  height: 0.1em;
-  bottom: 0;
-  left: 0;
-  background-color: #ddd;
-  -webkit-transform-origin: bottom right;
-          transform-origin: bottom right;
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-}
-
-.top-bar ul li a:hover:after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
 }
 
 .banner {
@@ -605,7 +610,10 @@ footer h3 {
 
 footer ul {
   padding-left: 0em;
-  line-height: 3.5em;
+}
+
+footer ul li {
+  padding-top: 2.2em;
 }
 
 footer i {
@@ -697,11 +705,8 @@ footer .copyright small {
 }
 
 @media (max-width: 999px) {
-  .mobile-hidden {
+  .login .mobile-hidden {
     display: none;
-  }
-  .top-bar .login li a:after {
-    background-color: rgba(0, 0, 0, 0);
   }
   .wrapper {
     -webkit-box-orient: vertical;

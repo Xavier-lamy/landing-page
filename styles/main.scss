@@ -9,7 +9,6 @@
     to {transform: translate(0px, 0px);}
 }
 
-
 /*General*/
 body {
     box-sizing: border-box;
@@ -48,22 +47,45 @@ body {
             text-decoration: underline;
         }
     }
+    /*Animation: underline nav items when hover*/
+    .navbar a, .login span, .contacts span, .about a, .follow span {
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 0.1em;
+            bottom: 0;
+            left: 0;
+            background-color: $text;
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+        &:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    }
     ul {
         list-style: none;
     }
     .button, button {
         background-color: $button;
-        color: $text;
-        border-color: $button;        
+        color: $text;        
         border-style: none;
         border-radius: 1.6em;
         box-shadow: none;
         display: inline-block;
         padding: 0.6em 2.1em;
+        transition: transform 0.2s ease-in, background-color 0.2s ease-in;
         &:hover {
             cursor: pointer;
             background-color: $button-hover;
             text-decoration: none;
+            transform: scale(1.09);
         }
         &.button-lg {
             display: block;
@@ -164,28 +186,6 @@ header {
         li {
             padding: 0% 3%;
             font-size: $h6;
-            /*Animation: underline nav items when hover*/
-            a {
-                display: inline-block;
-                position: relative;
-                text-decoration: none;
-                &:after {
-                    content: '';
-                    position: absolute;
-                    width: 100%;
-                    transform: scaleX(0);
-                    height: 0.1em;
-                    bottom: 0;
-                    left: 0;
-                    background-color: $text;
-                    transform-origin: bottom right;
-                    transition: transform 0.3s ease-out;
-                }
-                &:hover:after {
-                    transform: scaleX(1);
-                    transform-origin: bottom left;
-                }
-            }
         }
     }
 }
@@ -366,7 +366,9 @@ footer {
     }
     ul {
         padding-left: 0em;
-        line-height: 3.5em;
+        li {
+            padding-top: 2.2em;
+        }
     }
     i {
         padding-right: .8em;
