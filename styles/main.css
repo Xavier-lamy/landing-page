@@ -39,7 +39,7 @@ body {
   color: #ddd;
   font-size: 0.8em;
   font-family: "Montserrat";
-  margin: 0px;
+  margin: 0em;
   line-height: 2em;
 }
 
@@ -592,6 +592,22 @@ footer .copyright small {
   }
   footer {
     padding: 3em 6em;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .top-bar, .navbar, .wrapper, footer {
+    padding-right: 9em;
+    padding-left: 9em;
+  }
+  .banner {
+    padding: 2em;
+  }
+  .banner .slogan br {
+    display: none;
+  }
+  .banner .searchbar {
+    padding: 1.2em;
   }
 }
 
