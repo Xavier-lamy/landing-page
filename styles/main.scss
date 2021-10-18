@@ -1,4 +1,14 @@
 @import 'partials/variables', 'partials/fonts';
+/*Animations*/
+@keyframes slide-right {
+    from {transform: translate(-250px, 0px);}
+    to {transform: translate(0px, 0px);}
+}
+@keyframes slide-left {
+    from {transform: translate(250px, 0px);}
+    to {transform: translate(0px, 0px);}
+}
+
 
 /*General*/
 body {
@@ -134,6 +144,7 @@ header {
         margin: 0.5em;
         width: fit-content;
         height: fit-content;
+        animation: slide-right 1s cubic-bezier(0, 0, 0.58, 0.58) 0.2s both;
     }
     ul {
         display: flex;
@@ -153,6 +164,7 @@ header {
         li {
             padding: 0% 3%;
             font-size: $h6;
+            /*Animation: underline nav items when hover*/
             a {
                 display: inline-block;
                 position: relative;
@@ -187,6 +199,7 @@ header {
     .slogan {
         line-height: 2em;
         margin: 0em;
+        animation: slide-left 1s cubic-bezier(0, 0, 0.58, 0.58) 0.2s both;
     }
 }
 

@@ -36,6 +36,50 @@
   font-display: swap;
 }
 
+/*Animations*/
+@-webkit-keyframes slide-right {
+  from {
+    -webkit-transform: translate(-250px, 0px);
+            transform: translate(-250px, 0px);
+  }
+  to {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+@keyframes slide-right {
+  from {
+    -webkit-transform: translate(-250px, 0px);
+            transform: translate(-250px, 0px);
+  }
+  to {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@-webkit-keyframes slide-left {
+  from {
+    -webkit-transform: translate(250px, 0px);
+            transform: translate(250px, 0px);
+  }
+  to {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@keyframes slide-left {
+  from {
+    -webkit-transform: translate(250px, 0px);
+            transform: translate(250px, 0px);
+  }
+  to {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
 /*General*/
 body {
   -webkit-box-sizing: border-box;
@@ -237,6 +281,8 @@ header {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  -webkit-animation: slide-right 1s cubic-bezier(0, 0, 0.58, 0.58) 0.2s both;
+          animation: slide-right 1s cubic-bezier(0, 0, 0.58, 0.58) 0.2s both;
 }
 
 .top-bar ul {
@@ -268,6 +314,7 @@ header {
 .top-bar ul li {
   padding: 0% 3%;
   font-size: 1.2em;
+  /*Animation: underline nav items when hover*/
 }
 
 .top-bar ul li a {
@@ -317,6 +364,8 @@ header {
 .banner .slogan {
   line-height: 2em;
   margin: 0em;
+  -webkit-animation: slide-left 1s cubic-bezier(0, 0, 0.58, 0.58) 0.2s both;
+          animation: slide-left 1s cubic-bezier(0, 0, 0.58, 0.58) 0.2s both;
 }
 
 .searchbar {
@@ -650,6 +699,9 @@ footer .copyright small {
 @media (max-width: 999px) {
   .mobile-hidden {
     display: none;
+  }
+  .top-bar .login li a:after {
+    background-color: rgba(0, 0, 0, 0);
   }
   .wrapper {
     -webkit-box-orient: vertical;
