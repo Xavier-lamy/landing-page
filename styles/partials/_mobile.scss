@@ -96,6 +96,9 @@
                     display: flex;
                     flex-flow: row wrap;
                     justify-content: space-around;
+                    .forum-block {
+                        width: 50%;
+                    }
                 }
 
             }
@@ -108,6 +111,9 @@
                 }
             }
         }
+    }
+    footer {
+        padding: 3em;
     }
 }
 
@@ -159,6 +165,7 @@
             .logo {
                 order: 3;
                 margin-top: 3em;
+                padding-left: 1em;
             }
             p {
                 order: 2;
@@ -172,8 +179,48 @@
 }
 
 @media (max-width: 425px) {
+    .navbar {
+        li:last-child {
+            display: none;
+        }
+    }
+    .slogan {
+        font-size: $h2;
+        br {
+            display: none;
+        }
+    }
+    .searchbar {
+        background: rgba($color: #000000, $alpha: 0);
+        form {
+            .search {
+                background-color: $secondary;
+                padding: 0.5em;
+            }
+            margin: 0em 2em;
+            flex-direction: column;
+            background: rgba($color: #000000, $alpha: 0);
+            padding: 0.5em;
+            .button {
+                margin: 1em 25%;
+            }
+        }
+    }
+    .card .card-body {
+        .button {
+            margin: 0em 10%;
+        }
+    }
+    aside {
+        .sidebar.forums .sidebar-content .forum-block {
+            width: 100%;
+        }
+    }
     footer {
         .company {
+            p br {
+                display: none;
+            }
             .newsletter {
                 div {
                     flex-direction: column;

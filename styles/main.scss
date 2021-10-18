@@ -323,7 +323,7 @@ footer {
         box-sizing: border-box;
     }
     background-color: $primary;
-    padding: 3em;
+    padding: 3em 4em;
     display: flex;
     flex-wrap: wrap;
     h3 {
@@ -339,6 +339,9 @@ footer {
     }
     .company {
         width: 30%;
+        p {
+            text-align: justify;
+        }
         .newsletter {
             margin-top: 3em;
             div {

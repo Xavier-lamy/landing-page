@@ -500,7 +500,7 @@ aside .sidebar:first-child {
 
 footer {
   background-color: #452b17;
-  padding: 3em;
+  padding: 3em 4em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,6 +529,10 @@ footer i {
 
 footer .company {
   width: 30%;
+}
+
+footer .company p {
+  text-align: justify;
 }
 
 footer .company .newsletter {
@@ -585,6 +589,9 @@ footer .copyright small {
   }
   body .card .card-img, body-lg .card-img {
     height: 20em;
+  }
+  footer {
+    padding: 3em 6em;
   }
 }
 
@@ -742,6 +749,9 @@ footer .copyright small {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  aside .sidebar.forums .sidebar-content .forum-block, aside .sidebar:first-child.forums .sidebar-content .forum-block {
+    width: 50%;
+  }
   aside .sidebar.contact-form .names, aside .sidebar:first-child.contact-form .names {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -750,6 +760,9 @@ footer .copyright small {
   }
   aside .sidebar.contact-form .names input, aside .sidebar:first-child.contact-form .names input {
     width: 50%;
+  }
+  footer {
+    padding: 3em;
   }
 }
 
@@ -813,6 +826,7 @@ footer .copyright small {
         -ms-flex-order: 3;
             order: 3;
     margin-top: 3em;
+    padding-left: 1em;
   }
   footer .company p {
     -webkit-box-ordinal-group: 3;
@@ -828,6 +842,43 @@ footer .copyright small {
 }
 
 @media (max-width: 425px) {
+  .navbar li:last-child {
+    display: none;
+  }
+  .slogan {
+    font-size: 2.6em;
+  }
+  .slogan br {
+    display: none;
+  }
+  .searchbar {
+    background: rgba(0, 0, 0, 0);
+  }
+  .searchbar form {
+    margin: 0em 2em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: rgba(0, 0, 0, 0);
+    padding: 0.5em;
+  }
+  .searchbar form .search {
+    background-color: #724b2f;
+    padding: 0.5em;
+  }
+  .searchbar form .button {
+    margin: 1em 25%;
+  }
+  .card .card-body .button {
+    margin: 0em 10%;
+  }
+  aside .sidebar.forums .sidebar-content .forum-block {
+    width: 100%;
+  }
+  footer .company p br {
+    display: none;
+  }
   footer .company .newsletter div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
