@@ -4,315 +4,349 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Armet</title>
-    <link rel="stylesheet" type="text/css" href="styles/main.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
-<body>
-    <header>
-        <div class="top-bar">
-            <span class="logo"><a href="#"><img src="assets/images/icons/logo-armet.svg" alt="Logo Armet" width="100" height="50"></a></span>
-            <ul class="navbar">
-                <li><a href="#" aria-current="page">Home</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Tips</a></li>
-                <li><a href="#">Forum</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <ul class="login">
-                <li><a href="#" aria-label="Register"><i class="fas fa-user-plus fa-lg"></i><span class="mobile-hidden">Register</span></a></li>
-                <li><a href="#" aria-label="Login"><i class="fas fa-sign-in-alt fa-lg"></i><span class="mobile-hidden">Login</span></a></li>
-            </ul>
+<body class="text-light bg-body">
+    <header class="bg-secondary">
+        <div class="container">
+            <nav class="navbar row">
+                <span class="navbarbrand col-2 order-lg-1"><a href="#"><img src="assets/images/icons/logo-armet.svg" alt="Logo Armet" width="100" height="50"></a></span>
+                <ul class="navbar-nav flex-row justify-content-center col-lg-6 col-12 order-lg-2 order-3 ali">
+                    <li class="nav-item px-4"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                    <li class="nav-item px-4"><a href="#" class="nav-link">News</a></li>
+                    <li class="nav-item px-4"><a href="#" class="nav-link">Tips</a></li>
+                    <li class="nav-item px-4"><a href="#" class="nav-link">Forum</a></li>
+                    <li class="nav-item px-4"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+                <ul class="navbar-nav flex-row justify-content-end col-4 login order-lg-3 order-2">
+                    <li class="nav-item px-4"><a href="#" class="nav-link d-flex align-items-center" aria-label="Register"><i class="fas fa-user-plus fa-lg pe-2"></i><span class="d-none d-lg-block">Register</span></a></li>
+                    <li class="nav-item px-4"><a href="#" class="nav-link d-flex align-items-center" aria-label="Login"><i class="fas fa-sign-in-alt fa-lg pe-2"></i><span class="d-none d-lg-block">Login</span></a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="banner">
-            <h1 class="slogan">Historical games<br>
-                news and tips</h1>
-            <div class="searchbar">
-                <form action="#" method="post">
-                    <div class="search">
-                        <label for="search" aria-label="search"><i class="fas fa-search fa-lg"></i></label>
-                        <input type="text" id="search" name="search" placeholder="Search...">
+        <div class="bg-brown py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h1 class="lh-base">Historical games<br class="d-xs-none">
+                            news and tips</h1>
                     </div>
-                    <input type="submit" value="Search" class="button">
-                </form>
+                    <div class="col-lg-7 my-auto">
+                        <form action="#" method="post" class="d-flex justify-content-between bg-secondary">
+                            <label for="search" aria-label="search"></label>
+                            <div class="input-group bg-secondary py-2 px-3 d-flex align-items-center">
+                                <i class="fas fa-search fa-lg input-group-text bg-secondary border-0 text-light"></i>
+                                <input type="text" id="search" name="search" placeholder="Search..."  class="bg-secondary form-control border-0">
+                            </div>
+                            <input type="submit" value="Search" class="btn btn-primary m-2 px-4">
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
-    <div class="wrapper">
-        <div class="content">
-            <section class="latest-news">
-                <div class="section-title">
-                    <h2>Latest News</h2>
-                    <a href="#" class="button">See more</a>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-9">
+                <section class="latest-news">
+                    <div class="row mb-4 d-flex align-items-center">
+                        <h2 class="col-9">Latest News</h2>
+                        <div class="col-3 text-end">
+                            <a href="#" class="btn btn-primary px-4">See more</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8 p-1">
+                            <div class="card bg-dark p-2 border-0 h-100">
+                                <span class="bg-primary text-center col-3 mb-3">Strategy</span>
+                                <div class="card-img-top px-2">
+                                    <picture>
+                                        <source srcset="assets/images/pictures/AD-screenshot2-medium.webp" type="image/webp">
+                                        <source srcset="assets/images/pictures/AD-screenshot2-medium.png" type="image/png">
+                                        <img srcset="assets/images/pictures/AD-screenshot2-medium.png" alt="WarTotal postponed" loading="lazy" class="img-fluid">
+                                    </picture>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title h5">WarTotal postponed to next year!</h3>
+                                    <p class="card-text">AssemblingCompany, the team behind WarTotal just announced that their game will be postponed. 
+                                        Original the game was suppose to be released this December, but they finally decided to 
+                                        release it only next year. The teams justify their choice by the will of making the game even better.</p>
+                                </div>
+                                <div class="col-12 text-center card-footer">
+                                    <a href="#" class="btn btn-primary col-6 text-center">View article</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 p-1">
+                            <div class="card bg-dark p-2 border-0 h-100">
+                                <span class="bg-primary text-center col-3 mb-3">Rpg</span>
+                                <div class="card-img-top px-2">
+                                    <picture>
+                                        <source srcset="assets/images/pictures/AD-screenshot1-small.webp" type="image/webp">
+                                        <source srcset="assets/images/pictures/AD-screenshot1-small.png" type="image/png">
+                                        <img srcset="assets/images/pictures/AD-screenshot1-small.png" alt="WarTotal postponed" loading="lazy" class="img-fluid">
+                                    </picture>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title h5">A new mod for Kingdom</h3>
+                                    <p class="card-text">Since it first goes out, Kingdom has been praised by players, a new mod might made it even greater. Let's see what does it brings.</p>
+                                </div>
+                                <div class="col-12 text-center card-footer">
+                                    <a href="#" class="btn btn-primary col-12 text-center">View article</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 p-1">
+                            <div class="card bg-dark p-2 border-0 h-100">
+                                <span class="bg-primary text-center col-3 mb-3">Rpg</span>
+                                <div class="card-img-top px-2">
+                                    <picture>
+                                        <source srcset="assets/images/pictures/AD-screenshot1-small.webp" type="image/webp">
+                                        <source srcset="assets/images/pictures/AD-screenshot1-small.png" type="image/png">
+                                        <img srcset="assets/images/pictures/AD-screenshot1-small.png" alt="WarTotal postponed" loading="lazy" class="img-fluid">
+                                    </picture>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title h5">A new mod for Kingdom</h3>
+                                    <p class="card-text">Since it first goes out, Kingdom has been praised by players, a new mod might made it even greater. Let's see what does it brings.</p>
+                                </div>
+                                <div class="col-12 text-center card-footer">
+                                    <a href="#" class="btn btn-primary col-12 text-center">View article</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 p-1">
+                            <div class="card bg-dark p-2 border-0 h-100">
+                                <span class="bg-primary text-center col-3 mb-3">Rpg</span>
+                                <div class="card-img-top px-2">
+                                    <picture>
+                                        <source srcset="assets/images/pictures/AD-screenshot1-small.webp" type="image/webp">
+                                        <source srcset="assets/images/pictures/AD-screenshot1-small.png" type="image/png">
+                                        <img srcset="assets/images/pictures/AD-screenshot1-small.png" alt="WarTotal postponed" loading="lazy" class="img-fluid">
+                                    </picture>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title h5">A new mod for Kingdom</h3>
+                                    <p class="card-text">Since it first goes out, Kingdom has been praised by players, a new mod might made it even greater. Let's see what does it brings.</p>
+                                </div>
+                                <div class="col-12 text-center card-footer">
+                                    <a href="#" class="btn btn-primary col-12 text-center">View article</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 p-1">
+                            <div class="card bg-dark p-2 border-0 h-100">
+                                <span class="bg-primary text-center col-3 mb-3">Rpg</span>
+                                <div class="card-img-top px-2">
+                                    <picture>
+                                        <source srcset="assets/images/pictures/AD-screenshot1-small.webp" type="image/webp">
+                                        <source srcset="assets/images/pictures/AD-screenshot1-small.png" type="image/png">
+                                        <img srcset="assets/images/pictures/AD-screenshot1-small.png" alt="WarTotal postponed" loading="lazy" class="img-fluid">
+                                    </picture>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title h5">A new mod for Kingdom</h3>
+                                    <p class="card-text">Since it first goes out, Kingdom has been praised by players, a new mod might made it even greater. Let's see what does it brings.</p>
+                                </div>
+                                <div class="col-12 text-center card-footer">
+                                    <a href="#" class="btn btn-primary col-12 text-center">View article</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="tips-tricks mt-5">
+                    <div class="section-title">
+                        <h2>Games Tips & Tricks</h2>
+                        <a href="#" class="button">See more</a>
+                    </div>
+                    <div class="section-body">
+                        <div class="card">
+                            <span class="tag">Rpg</span>
+                            <div class="card-img">
+                                <picture>
+                                    <source srcset="assets/images/pictures/AD-screenshot1-small.webp" type="image/webp">
+                                    <source srcset="assets/images/pictures/AD-screenshot1-small.png" type="image/png">
+                                    <img srcset="assets/images/pictures/AD-screenshot1-small.png" alt="A new mod for Kingdom" loading="lazy">
+                                </picture>                        
+                            </div>
+                            <div class="card-body">
+                                <h3>A new mod for Kingdom</h3>
+                                <p>Since it first goes out, Kingdom has been praised by players, a new mod might made it even greater. Let's see what does it brings.</p>
+                                <a href="#" class="button button-lg">View article</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <span class="tag">Rpg</span>
+                            <div class="card-img">
+                                <picture>
+                                    <source srcset="assets/images/pictures/AD-screenshot1-small.webp" type="image/webp">
+                                    <source srcset="assets/images/pictures/AD-screenshot1-small.png" type="image/png">
+                                    <img srcset="assets/images/pictures/AD-screenshot1-small.png" alt="A new mod for Kingdom" loading="lazy">
+                                </picture>                        
+                            </div>
+                            <div class="card-body">
+                                <h3>A new mod for Kingdom</h3>
+                                <p>Since it first goes out, Kingdom has been praised by players, a new mod might made it even greater. Let's see what does it brings.</p>
+                                <a href="#" class="button button-lg">View article</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <span class="tag">Rpg</span>
+                            <div class="card-img">
+                                <picture>
+                                    <source srcset="assets/images/pictures/AD-screenshot1-small.webp" type="image/webp">
+                                    <source srcset="assets/images/pictures/AD-screenshot1-small.png" type="image/png">
+                                    <img srcset="assets/images/pictures/AD-screenshot1-small.png" alt="A new mod for Kingdom" loading="lazy">
+                                </picture>                        
+                            </div>
+                            <div class="card-body">
+                                <h3>A new mod for Kingdom</h3>
+                                <p>Since it first goes out, Kingdom has been praised by players, a new mod might made it even greater. Let's see what does it brings.</p>
+                                <a href="#" class="button button-lg">View article</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <span class="tag">Rpg</span>
+                            <div class="card-img">
+                                <picture>
+                                    <source srcset="assets/images/pictures/AD-screenshot1-small.webp" type="image/webp">
+                                    <source srcset="assets/images/pictures/AD-screenshot1-small.png" type="image/png">
+                                    <img srcset="assets/images/pictures/AD-screenshot1-small.png" alt="A new mod for Kingdom" loading="lazy">
+                                </picture>                        
+                            </div>
+                            <div class="card-body">
+                                <h3>A new mod for Kingdom</h3>
+                                <p>Since it first goes out, Kingdom has been praised by players, a new mod might made it even greater. Let's see what does it brings.</p>
+                                <a href="#" class="button button-lg">View article</a>
+                            </div>
+                        </div>
+                        <div class="card card-lg">
+                            <span class="tag">Strategy</span>
+                            <div class="card-img">
+                                <picture>
+                                    <source srcset="assets/images/pictures/AD-screenshot2-medium.webp" type="image/webp">
+                                    <source srcset="assets/images/pictures/AD-screenshot2-medium.png" type="image/png">
+                                    <img srcset="assets/images/pictures/AD-screenshot2-medium.png" alt="WarTotal postponed" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="card-body">
+                                <h3>WarTotal postponed to next year!</h3>
+                                <p>AssemblingCompany, the team behind WarTotal just announced that their game will be postponed. 
+                                    Original the game was suppose to be released this December, but they finally decided to 
+                                    release it only next year. The teams justify their choice by the will of making the game even better.</p>
+                                <a href="#" class="button button-lg">View article</a>                            
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <aside class="col-lg-3">
+                <div class="sidebar reactions">
+                    <div class="sidebar-title">
+                        <h2>Top Reactions</h2>
+                    </div>
+                    <div class="sidebar-content">
+                        <div class="comment-block">
+                            <div class="comment-infos">
+                                <span class="pseudo">AlexanderTheGreat @Atg:</span>
+                                <p class="comment">The game will be postponed, let’s hope it’s for the best.</p>
+                                <p class="forum-name">In WarTotal-General Discussion</p>
+                            </div>
+                            <a href="#" class="button">See in Forum</a>
+                        </div>
+                        <div class="comment-block">
+                            <div class="comment-infos">
+                                <span class="pseudo">Attila @Ati:</span>
+                                <p class="comment">Any method to survive against Poland past 1503?</p>
+                                <p class="forum-name">In King Of Iron-General Discussion</p>
+                            </div>
+                            <a href="#" class="button">See in Forum</a>
+                        </div>
+                        <div class="comment-block">
+                            <div class="comment-infos">
+                                <span class="pseudo">Napoleon @Napo:</span>
+                                <p class="comment">This new update looks so great!
+                                    Best update so far...  </p>
+                                <p class="forum-name">In Great Conquest-Updates</p>
+                            </div>
+                            <a href="#" class="button">See in Forum</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="section-body">
-                    <div class="card card-lg">
-                        <span class="tag">Strategy</span>
-                        <div class="card-img">
-                            <picture>
-                                <source srcset="assets/images/pictures/AD-screenshot2-medium.webp" type="image/webp">
-                                <source srcset="assets/images/pictures/AD-screenshot2-medium.png" type="image/png">
-                                <img srcset="assets/images/pictures/AD-screenshot2-medium.png" alt="WarTotal postponed" loading="lazy">
-                            </picture>
+                <div class="sidebar forums">
+                    <div class="sidebar-title">
+                        <h2>Forums</h2>
+                    </div>
+                    <div class="sidebar-content">
+                        <div class="forum-block">
+                            <h3><a href="#">WarTotal</a></h3>
+                            <ul>
+                                <li><a href="#">General discussion</a></li>
+                                <li><a href="#">Updates</a></li>
+                                <li><a href="#">Tutorials</a></li>
+                                <li><a href="#">RolePlay Campaigns</a></li>
+                            </ul>
                         </div>
-                        <div class="card-body">
-                            <h3>WarTotal postponed to next year!</h3>
-                            <p>AssemblingCompany, the team behind WarTotal just announced that their game will be postponed. 
-                                Original the game was suppose to be released this December, but they finally decided to 
-                                release it only next year. The teams justify their choice by the will of making the game even better.</p>
-                            <a href="#" class="button button-lg">View article</a>
+                        <div class="forum-block">
+                            <h3><a href="#">King Of Iron</a></h3>
+                            <ul>
+                                <li><a href="#">General discussion</a></li>
+                                <li><a href="#">Updates</a></li>
+                                <li><a href="#">Tutorials</a></li>
+                                <li><a href="#">Speed Run</a></li>
+                            </ul>
+                        </div>
+                        <div class="forum-block">
+                            <h3><a href="#">Kingdom</a></h3>
+                            <ul>
+                                <li><a href="#">General discussion</a></li>
+                                <li><a href="#">Updates</a></li>
+                                <li><a href="#">Tutorials</a></li>
+                                <li><a href="#">Speed Run</a></li>
+                            </ul>
+                        </div>
+                        <div class="forum-block">
+                            <h3><a href="#">WarHalberd</a></h3>
+                            <ul>
+                                <li><a href="#">General discussion</a></li>
+                                <li><a href="#">Updates</a></li>
+                                <li><a href="#">Tutorials</a></li>
+                                <li><a href="#">Speed Run</a></li>
+                            </ul> 
                         </div>
                     </div>
-                    <div class="card">
-                        <span class="tag">Rpg</span>
-                        <div class="card-img">
-                            <picture>
-                                <source srcset="assets/images/pictures/AD-screenshot1-small.webp" type="image/webp">
-                                <source srcset="assets/images/pictures/AD-screenshot1-small.png" type="image/png">
-                                <img srcset="assets/images/pictures/AD-screenshot1-small.png" alt="A new mod for Kingdom" loading="lazy">
-                            </picture>                        
-                        </div>
-                        <div class="card-body">
-                            <h3>A new mod for Kingdom</h3>
-                            <p>Since it first goes out, Kingdom has been praised by players, a new mod might made it even greater. Let's see what does it brings.</p>
-                            <a href="#" class="button button-lg">View article</a>
-                        </div>
+                    <a href="#" class="button">See all forums</a>
+                </div>
+                <div class="sidebar contact-form">
+                    <div class="sidebar-title">
+                        <h2>Contact</h2>
                     </div>
-                    <div class="card">
-                        <span class="tag">Rpg</span>
-                        <div class="card-img">
-                            <picture>
-                                <source srcset="assets/images/pictures/AD-screenshot1-small.webp" type="image/webp">
-                                <source srcset="assets/images/pictures/AD-screenshot1-small.png" type="image/png">
-                                <img srcset="assets/images/pictures/AD-screenshot1-small.png" alt="A new mod for Kingdom" loading="lazy">
-                            </picture>                        
-                        </div>
-                        <div class="card-body">
-                            <h3>A new mod for Kingdom</h3>
-                            <p>Since it first goes out, Kingdom has been praised by players, a new mod might made it even greater. Let's see what does it brings.</p>
-                            <a href="#" class="button button-lg">View article</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <span class="tag">Rpg</span>
-                        <div class="card-img">
-                            <picture>
-                                <source srcset="assets/images/pictures/AD-screenshot1-small.webp" type="image/webp">
-                                <source srcset="assets/images/pictures/AD-screenshot1-small.png" type="image/png">
-                                <img srcset="assets/images/pictures/AD-screenshot1-small.png" alt="A new mod for Kingdom" loading="lazy">
-                            </picture>                        
-                        </div>
-                        <div class="card-body">
-                            <h3>A new mod for Kingdom</h3>
-                            <p>Since it first goes out, Kingdom has been praised by players, a new mod might made it even greater. Let's see what does it brings.</p>
-                            <a href="#" class="button button-lg">View article</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <span class="tag">Rpg</span>
-                        <div class="card-img">
-                            <picture>
-                                <source srcset="assets/images/pictures/AD-screenshot1-small.webp" type="image/webp">
-                                <source srcset="assets/images/pictures/AD-screenshot1-small.png" type="image/png">
-                                <img srcset="assets/images/pictures/AD-screenshot1-small.png" alt="A new mod for Kingdom" loading="lazy">
-                            </picture>                        
-                        </div>
-                        <div class="card-body">
-                            <h3>A new mod for Kingdom</h3>
-                            <p>Since it first goes out, Kingdom has been praised by players, a new mod might made it even greater. Let's see what does it brings.</p>
-                            <a href="#" class="button button-lg">View article</a>
-                        </div>
+                    <div class="sidebar-content">
+                        <form action="#" method="post">
+                            <div class="names">
+                                <label for="name" aria-label="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Name" maxlength="255" required>
+                                <label for="first-name" aria-label="first name">First Name</label>
+                                <input type="text" id="first-name" name="first-name" placeholder="First Name" maxlength="255" required>
+                            </div>
+                            <div class="mail">
+                                <label for="mail" aria-label="mail">Mail</label>
+                                <input type="email" id="mail" name="mail" placeholder="Mail" maxlength="255" required>
+                            </div>
+                            <div class="message">
+                                <label for="message" aria-label="message">message</label>
+                                <textarea id="message" name="message" placeholder="Your message" maxlength="255" minlength="10" rows="8" required></textarea>
+                            </div>
+                            <div class="validate">
+                                <input type="submit" value="Contact us" class="button">
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </section>
-            <section class="tips-tricks">
-                <div class="section-title">
-                    <h2>Games Tips & Tricks</h2>
-                    <a href="#" class="button">See more</a>
-                </div>
-                <div class="section-body">
-                    <div class="card">
-                        <span class="tag">Rpg</span>
-                        <div class="card-img">
-                            <picture>
-                                <source srcset="assets/images/pictures/AD-screenshot1-small.webp" type="image/webp">
-                                <source srcset="assets/images/pictures/AD-screenshot1-small.png" type="image/png">
-                                <img srcset="assets/images/pictures/AD-screenshot1-small.png" alt="A new mod for Kingdom" loading="lazy">
-                            </picture>                        
-                        </div>
-                        <div class="card-body">
-                            <h3>A new mod for Kingdom</h3>
-                            <p>Since it first goes out, Kingdom has been praised by players, a new mod might made it even greater. Let's see what does it brings.</p>
-                            <a href="#" class="button button-lg">View article</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <span class="tag">Rpg</span>
-                        <div class="card-img">
-                            <picture>
-                                <source srcset="assets/images/pictures/AD-screenshot1-small.webp" type="image/webp">
-                                <source srcset="assets/images/pictures/AD-screenshot1-small.png" type="image/png">
-                                <img srcset="assets/images/pictures/AD-screenshot1-small.png" alt="A new mod for Kingdom" loading="lazy">
-                            </picture>                        
-                        </div>
-                        <div class="card-body">
-                            <h3>A new mod for Kingdom</h3>
-                            <p>Since it first goes out, Kingdom has been praised by players, a new mod might made it even greater. Let's see what does it brings.</p>
-                            <a href="#" class="button button-lg">View article</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <span class="tag">Rpg</span>
-                        <div class="card-img">
-                            <picture>
-                                <source srcset="assets/images/pictures/AD-screenshot1-small.webp" type="image/webp">
-                                <source srcset="assets/images/pictures/AD-screenshot1-small.png" type="image/png">
-                                <img srcset="assets/images/pictures/AD-screenshot1-small.png" alt="A new mod for Kingdom" loading="lazy">
-                            </picture>                        
-                        </div>
-                        <div class="card-body">
-                            <h3>A new mod for Kingdom</h3>
-                            <p>Since it first goes out, Kingdom has been praised by players, a new mod might made it even greater. Let's see what does it brings.</p>
-                            <a href="#" class="button button-lg">View article</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <span class="tag">Rpg</span>
-                        <div class="card-img">
-                            <picture>
-                                <source srcset="assets/images/pictures/AD-screenshot1-small.webp" type="image/webp">
-                                <source srcset="assets/images/pictures/AD-screenshot1-small.png" type="image/png">
-                                <img srcset="assets/images/pictures/AD-screenshot1-small.png" alt="A new mod for Kingdom" loading="lazy">
-                            </picture>                        
-                        </div>
-                        <div class="card-body">
-                            <h3>A new mod for Kingdom</h3>
-                            <p>Since it first goes out, Kingdom has been praised by players, a new mod might made it even greater. Let's see what does it brings.</p>
-                            <a href="#" class="button button-lg">View article</a>
-                        </div>
-                    </div>
-                    <div class="card card-lg">
-                        <span class="tag">Strategy</span>
-                        <div class="card-img">
-                            <picture>
-                                <source srcset="assets/images/pictures/AD-screenshot2-medium.webp" type="image/webp">
-                                <source srcset="assets/images/pictures/AD-screenshot2-medium.png" type="image/png">
-                                <img srcset="assets/images/pictures/AD-screenshot2-medium.png" alt="WarTotal postponed" loading="lazy">
-                            </picture>
-                        </div>
-                        <div class="card-body">
-                            <h3>WarTotal postponed to next year!</h3>
-                            <p>AssemblingCompany, the team behind WarTotal just announced that their game will be postponed. 
-                                Original the game was suppose to be released this December, but they finally decided to 
-                                release it only next year. The teams justify their choice by the will of making the game even better.</p>
-                            <a href="#" class="button button-lg">View article</a>                            
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </aside>
         </div>
-        <aside>
-            <div class="sidebar reactions">
-                <div class="sidebar-title">
-                    <h2>Top Reactions</h2>
-                </div>
-                <div class="sidebar-content">
-                    <div class="comment-block">
-                        <div class="comment-infos">
-                            <span class="pseudo">AlexanderTheGreat @Atg:</span>
-                            <p class="comment">The game will be postponed, let’s hope it’s for the best.</p>
-                            <p class="forum-name">In WarTotal-General Discussion</p>
-                        </div>
-                        <a href="#" class="button">See in Forum</a>
-                    </div>
-                    <div class="comment-block">
-                        <div class="comment-infos">
-                            <span class="pseudo">Attila @Ati:</span>
-                            <p class="comment">Any method to survive against Poland past 1503?</p>
-                            <p class="forum-name">In King Of Iron-General Discussion</p>
-                        </div>
-                        <a href="#" class="button">See in Forum</a>
-                    </div>
-                    <div class="comment-block">
-                        <div class="comment-infos">
-                            <span class="pseudo">Napoleon @Napo:</span>
-                            <p class="comment">This new update looks so great!
-                                Best update so far...  </p>
-                            <p class="forum-name">In Great Conquest-Updates</p>
-                        </div>
-                        <a href="#" class="button">See in Forum</a>
-                    </div>
-                </div>
-            </div>
-            <div class="sidebar forums">
-                <div class="sidebar-title">
-                    <h2>Forums</h2>
-                </div>
-                <div class="sidebar-content">
-                    <div class="forum-block">
-                        <h3><a href="#">WarTotal</a></h3>
-                        <ul>
-                            <li><a href="#">General discussion</a></li>
-                            <li><a href="#">Updates</a></li>
-                            <li><a href="#">Tutorials</a></li>
-                            <li><a href="#">RolePlay Campaigns</a></li>
-                        </ul>
-                    </div>
-                    <div class="forum-block">
-                        <h3><a href="#">King Of Iron</a></h3>
-                        <ul>
-                            <li><a href="#">General discussion</a></li>
-                            <li><a href="#">Updates</a></li>
-                            <li><a href="#">Tutorials</a></li>
-                            <li><a href="#">Speed Run</a></li>
-                        </ul>
-                    </div>
-                    <div class="forum-block">
-                        <h3><a href="#">Kingdom</a></h3>
-                        <ul>
-                            <li><a href="#">General discussion</a></li>
-                            <li><a href="#">Updates</a></li>
-                            <li><a href="#">Tutorials</a></li>
-                            <li><a href="#">Speed Run</a></li>
-                        </ul>
-                    </div>
-                    <div class="forum-block">
-                        <h3><a href="#">WarHalberd</a></h3>
-                        <ul>
-                            <li><a href="#">General discussion</a></li>
-                            <li><a href="#">Updates</a></li>
-                            <li><a href="#">Tutorials</a></li>
-                            <li><a href="#">Speed Run</a></li>
-                        </ul> 
-                    </div>
-                </div>
-                <a href="#" class="button">See all forums</a>
-            </div>
-            <div class="sidebar contact-form">
-                <div class="sidebar-title">
-                    <h2>Contact</h2>
-                </div>
-                <div class="sidebar-content">
-                    <form action="#" method="post">
-                        <div class="names">
-                            <label for="name" aria-label="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Name" maxlength="255" required>
-                            <label for="first-name" aria-label="first name">First Name</label>
-                            <input type="text" id="first-name" name="first-name" placeholder="First Name" maxlength="255" required>
-                        </div>
-                        <div class="mail">
-                            <label for="mail" aria-label="mail">Mail</label>
-                            <input type="email" id="mail" name="mail" placeholder="Mail" maxlength="255" required>
-                        </div>
-                        <div class="message">
-                            <label for="message" aria-label="message">message</label>
-                            <textarea id="message" name="message" placeholder="Your message" maxlength="255" minlength="10" rows="8" required></textarea>
-                        </div>
-                        <div class="validate">
-                            <input type="submit" value="Contact us" class="button">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </aside>
     </div>
     <footer>
         <div class="company">
@@ -359,6 +393,7 @@
             <small>&copy; Copyright 2021 Armet.com</small>
         </div>
     </footer>
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/0cb3a70ede.js" crossorigin="anonymous"></script>
 </body>
 </html>

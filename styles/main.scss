@@ -1,5 +1,5 @@
-@import 'partials/variables', 'partials/fonts';
-/*Animations*/
+/** 
+*Animations*
 @keyframes slide-right {
     from {transform: translate(-250px, 0px);}
     to {transform: translate(0px, 0px);}
@@ -9,7 +9,7 @@
     to {transform: translate(0px, 0px);}
 }
 
-/*General*/
+*General*
 body {
     box-sizing: border-box;
     background-color: $background;
@@ -47,7 +47,7 @@ body {
             text-decoration: underline;
         }
     }
-    /*Animation: underline when hover*/
+    *Animation: underline when hover*
     .navbar a, .login span, .contacts span, .about a, .follow span, .forum-block a {
         display: inline-block;
         position: relative;
@@ -221,7 +221,7 @@ header {
     }
 }
 
-/*Main*/
+*Main*
 .wrapper {
     margin: 5%;
     display: flex;
@@ -409,4 +409,89 @@ footer {
     }
 }
 
-@import 'partials/desktop', 'partials/mobile';
+@import 'partials/desktop', 'partials/mobile';**/ 
+
+@import 'partials/variables', 'partials/fonts';
+body {
+    box-sizing: border-box !important;
+    background-color: $background !important;
+    color: $text !important;
+    font-size: $p-medium !important;
+    font-family: $p-font, sans-serif !important;
+    line-height: 2em !important;
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $h-font, serif;
+    }
+    h1, .h1 {
+        font-size: $h1;
+    }
+    h2, .h2 {
+        font-size: $h2;
+    }
+    h3, .h3 {
+        font-size: $h3;
+    }
+    h4, .h4 {
+        font-size: $h4;
+    }
+    h5, .h5 {
+        font-size: $h5;
+    }
+    h6, .h6 {
+        font-size: $h6;
+    }
+}
+
+.bg-primary {
+    background-color: $primary !important;
+}
+
+.bg-secondary {
+    background-color: $secondary !important;
+}
+
+.bg-secondary-variant {
+    background-color: $secondary-variant !important;
+}
+
+.bg-secondary-variant-transparent {
+    background-color: $secondary-variant-transparent !important;
+}
+
+.btn-primary {
+    background-color: $button !important;
+    color: $text;
+    font-size: $p-medium !important;        
+    border-style: none !important;
+    border-radius: 0.6em;
+    box-shadow: none !important;
+    &:hover {
+        background-color: $button-hover !important;
+    }
+}
+
+.bg-body {
+    background-color: $background !important;
+}
+
+.bg-dark {
+    background-image: $gradient-black !important;
+}
+
+.bg-brown {
+    background-image: $gradient-brown !important;
+}
+
+.text-light, a {
+    color: $text !important; 
+}
+
+.card-img-top {
+    overflow: hidden !important;
+    height: 16em !important; 
+    img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+}
