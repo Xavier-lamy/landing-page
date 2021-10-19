@@ -264,44 +264,50 @@
                     </div>
                 </section>
             </div>
-            <aside class="col-lg-3">
-                <div class="sidebar reactions">
-                    <div class="sidebar-title">
-                        <h2>Top Reactions</h2>
+            <aside class="col-lg-3 ps-lg-4">
+                <div class="bg-dark px-4 py-3 mt-lg-0 mt-4">
+                    <div class="bg-secondary py-2 text-center">
+                        <h2 class="h4 mb-0">Top Reactions</h2>
                     </div>
-                    <div class="sidebar-content">
-                        <div class="comment-block">
-                            <div class="comment-infos">
-                                <span class="pseudo">AlexanderTheGreat @Atg:</span>
-                                <p class="comment">The game will be postponed, let’s hope it’s for the best.</p>
-                                <p class="forum-name">In WarTotal-General Discussion</p>
+                    <div class="mt-4">
+                        <div class="mt-5">
+                            <div class="d-flex flex-column">
+                                <span class="h6">AlexanderTheGreat @Atg:</span>
+                                <p class="mb-1">The game will be postponed, let’s hope it’s for the best.</p>
+                                <small>In WarTotal-General Discussion</small>
                             </div>
-                            <a href="#" class="button">See in Forum</a>
-                        </div>
-                        <div class="comment-block">
-                            <div class="comment-infos">
-                                <span class="pseudo">Attila @Ati:</span>
-                                <p class="comment">Any method to survive against Poland past 1503?</p>
-                                <p class="forum-name">In King Of Iron-General Discussion</p>
+                            <div class="d-flex justify-content-center mt-2">
+                                <a href="#" class="btn btn-primary">See in Forum</a>
                             </div>
-                            <a href="#" class="button">See in Forum</a>
                         </div>
-                        <div class="comment-block">
-                            <div class="comment-infos">
-                                <span class="pseudo">Napoleon @Napo:</span>
-                                <p class="comment">This new update looks so great!
+                        <div class="mt-5">
+                            <div class="d-flex flex-column">
+                                <span class="h6">Attila @Ati:</span>
+                                <p class="mb-1">Any method to survive against Poland past 1503?</p>
+                                <small>In King Of Iron-General Discussion</small>
+                            </div>
+                            <div class="d-flex justify-content-center mt-2">
+                                <a href="#" class="btn btn-primary">See in Forum</a>   
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <div class="d-flex flex-column">
+                                <span class="h6">Napoleon @Napo:</span>
+                                <p class="mb-1">This new update looks so great!
                                     Best update so far...  </p>
-                                <p class="forum-name">In Great Conquest-Updates</p>
+                                <small>In Great Conquest-Updates</small>
                             </div>
-                            <a href="#" class="button">See in Forum</a>
+                            <div class="d-flex justify-content-center mt-2">
+                                <a href="#" class="btn btn-primary">See in Forum</a>   
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="sidebar forums">
-                    <div class="sidebar-title">
-                        <h2>Forums</h2>
+                <div class="bg-dark px-4 py-3 mt-4">
+                    <div class="bg-secondary py-2 text-center">
+                        <h2 class="h4 mb-0">Forums</h2>
                     </div>
-                    <div class="sidebar-content">
+                    <div class="mt-4">
                         <div class="forum-block">
                             <h3><a href="#">WarTotal</a></h3>
                             <ul>
@@ -339,30 +345,36 @@
                             </ul> 
                         </div>
                     </div>
-                    <a href="#" class="button">See all forums</a>
-                </div>
-                <div class="sidebar contact-form">
-                    <div class="sidebar-title">
-                        <h2>Contact</h2>
+                    <div class="d-flex justify-content-center mt-2">
+                        <a href="#" class="btn btn-primary">See all forums</a>   
                     </div>
-                    <div class="sidebar-content">
+                </div>
+                <div class="bg-dark px-4 py-3 mt-4">
+                    <div class="bg-secondary py-2 text-center">
+                        <h2 class="h4 mb-0">Contact</h2>
+                    </div>
+                    <div class="mt-4">
                         <form action="#" method="post">
-                            <div class="names">
-                                <label for="name" aria-label="name">Name</label>
-                                <input type="text" id="name" name="name" placeholder="Name" maxlength="255" required>
-                                <label for="first-name" aria-label="first name">First Name</label>
-                                <input type="text" id="first-name" name="first-name" placeholder="First Name" maxlength="255" required>
+                            <div class="row">
+                                <div class="col-6 pe-1 pb-2">
+                                    <label for="name" aria-label="name" class="d-none">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Name" maxlength="255" required class="form-control bg-secondary border-0 text-center">
+                                </div>
+                                <div class="col-6 ps-1 pb-2">
+                                    <label for="first-name" aria-label="first name" class="d-none">First Name</label>
+                                    <input type="text" id="first-name" name="first-name" placeholder="First Name" maxlength="255" required class="form-control bg-secondary border-0 text-center">
+                                </div>
+                                <div class="col-12 pb-2">
+                                    <label for="mail" aria-label="mail" class="d-none">Mail</label>
+                                    <input type="email" id="mail" name="mail" placeholder="Mail" maxlength="255" required class="form-control bg-secondary border-0 text-center">
+                                </div>
+                                <div class="col-12 pb-2">
+                                    <label for="message" aria-label="message" class="d-none">message</label>
+                                    <textarea id="message" name="message" placeholder="Your message" maxlength="255" minlength="10" rows="8" required class="form-control bg-secondary border-0"></textarea>
+                                </div>
                             </div>
-                            <div class="mail">
-                                <label for="mail" aria-label="mail">Mail</label>
-                                <input type="email" id="mail" name="mail" placeholder="Mail" maxlength="255" required>
-                            </div>
-                            <div class="message">
-                                <label for="message" aria-label="message">message</label>
-                                <textarea id="message" name="message" placeholder="Your message" maxlength="255" minlength="10" rows="8" required></textarea>
-                            </div>
-                            <div class="validate">
-                                <input type="submit" value="Contact us" class="button">
+                            <div class="d-flex justify-content-center">
+                                <input type="submit" value="Contact us" class="btn btn-primary">
                             </div>
                         </form>
                     </div>
@@ -370,49 +382,57 @@
             </aside>
         </div>
     </div>
-    <footer>
-        <div class="company">
-            <span class="logo"><a href="#"><img src="assets/images/icons/logo-armet.svg" alt="Logo Armet" width="120" height="60"></a></span>
-            <p>Armet give you all the latest news for your <br> 
-            favorites historical and strategical games.</p>
-            <form action="#" method="post" class="newsletter">
-                <label for="newsletter" aria-label="newsletter">Join Armet Newsletter</label>
-                <div>
-                    <input type="mail" id="newsletter" name="newsletter" placeholder="Insert your mail here">
-                    <input type="submit" value="Join!" class="button">
+    <footer class="bg-primary mt-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-3">
+                    <span><a href="#"><img src="assets/images/icons/logo-armet.svg" alt="Logo Armet" width="120" height="60"></a></span>
+                    <p class="pt-4">Armet give you all the latest news for your 
+                    favorites historical and strategical games.</p>
+                    <form action="#" method="post" class="mt-1">
+                        <label for="newsletter">Join Armet Newsletter</label>
+                        <div class="bg-secondary p-2 d-flex justify-content-between mt-1">
+                            <div class="col-8">
+                                <input type="mail" id="newsletter" name="newsletter" placeholder="Insert your mail here" class="form-control bg-secondary border-0 text-center ps-0">
+                            </div>
+                            <div class="col-4 text-end">
+                                <input type="submit" value="Join!" class="btn btn-primary">
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            </form>
-        </div>
-        <div class="infos">
-            <div class="contacts">
-                <h3>Contacts</h3>
-                <ul>
-                    <li><a href="#"><i class="fas fa-map-marker-alt fa-lg"></i><span>133 Dadao Road, DaCheng, Taiwan</span></a></li>
-                    <li><a href="#"><i class="fas fa-envelope fa-lg"></i><span>armet@contact.com</span></a></li>
-                    <li><a href="#"><i class="fas fa-phone-alt fa-lg"></i><span>+833 386-456-428</span></a></li>
-                </ul>
+                <div class="col-9 d-flex justify-content-between ps-4">
+                    <div class="">
+                        <h3>Contacts</h3>
+                        <ul class="ps-0">
+                            <li class="pb-3"><a href="#"><i class="fas fa-map-marker-alt fa-lg pe-2"></i><span>133 Dadao Road, DaCheng, Taiwan</span></a></li>
+                            <li class="pb-3"><a href="#"><i class="fas fa-envelope fa-lg pe-2"></i><span>armet@contact.com</span></a></li>
+                            <li class="pb-3"><a href="#"><i class="fas fa-phone-alt fa-lg pe-2"></i><span>+833 386-456-428</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <h3>About</h3>
+                        <ul class="ps-0">
+                            <li class="pb-3"><a href="#">Privacy</a></li>
+                            <li class="pb-3"><a href="#">Cookie settings</a></li>
+                            <li class="pb-3"><a href="#">Armet Team</a></li>
+                            <li class="pb-3"><a href="#">Join Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <h3>Follow us</h3>
+                        <ul class="ps-0">
+                            <li class="pb-3"><a href="#" aria-label="Facebook"><i class="fab fa-facebook fa-lg pe-2"></i><span class="d-md-inline d-none">Facebook</span></a></li>
+                            <li class="pb-3"><a href="#" aria-label="Twitter"><i class="fab fa-twitter fa-lg pe-2"></i><span class="d-md-inline d-none">Twitter</span></a></li>
+                            <li class="pb-3"><a href="#" aria-label="Instagram"><i class="fab fa-instagram fa-lg pe-2"></i><span class="d-md-inline d-none">Instagram</span></a></li>
+                            <li class="pb-3"><a href="#" aria-label="TikTok"><i class="fab fa-tiktok fa-lg pe-2"></i><span class="d-md-inline d-none">TikTok</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 text-end">
+                    <small>&copy; Copyright 2021 Armet.com</small>
+                </div>
             </div>
-            <div class="about">
-                <h3>About</h3>
-                <ul>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Cookie settings</a></li>
-                    <li><a href="#">Armet Team</a></li>
-                    <li><a href="#">Join Us</a></li>
-                </ul>
-            </div>
-            <div class="follow">
-                <h3>Follow us</h3>
-                <ul>
-                    <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook fa-lg"></i><span>Facebook</span></a></li>
-                    <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i><span>Twitter</span></a></li>
-                    <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i><span>Instagram</span></a></li>
-                    <li><a href="#" aria-label="TikTok"><i class="fab fa-tiktok fa-lg"></i><span>TikTok</span></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="copyright">
-            <small>&copy; Copyright 2021 Armet.com</small>
         </div>
     </footer>
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>

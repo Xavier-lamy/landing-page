@@ -464,26 +464,62 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 
 body h1, body .h1 {
   font-size: 3em;
+  font-family: "Domine", serif;
 }
 
 body h2, body .h2 {
   font-size: 2.6em;
+  font-family: "Domine", serif;
 }
 
 body h3, body .h3 {
   font-size: 2.2em;
+  font-family: "Domine", serif;
 }
 
 body h4, body .h4 {
   font-size: 1.8em;
+  font-family: "Domine", serif;
 }
 
 body h5, body .h5 {
   font-size: 1.4em;
+  font-family: "Domine", serif;
 }
 
 body h6, body .h6 {
   font-size: 1.2em;
+  font-family: "Domine", serif;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body ul {
+  list-style: none;
+}
+
+body input, body textarea {
+  font-size: 0.8em !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+body .text-light, body a, body ::-webkit-input-placeholder {
+  color: #ddd !important;
+}
+
+body .text-light, body a, body :-ms-input-placeholder {
+  color: #ddd !important;
+}
+
+body .text-light, body a, body ::-ms-input-placeholder {
+  color: #ddd !important;
+}
+
+body .text-light, body a, body ::placeholder {
+  color: #ddd !important;
 }
 
 .bg-primary {
@@ -507,7 +543,7 @@ body h6, body .h6 {
   color: #ddd;
   font-size: 0.8em !important;
   border-style: none !important;
-  border-radius: 0.6em;
+  border-radius: 1.6em;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
@@ -527,10 +563,6 @@ body h6, body .h6 {
 
 .bg-brown {
   background-image: linear-gradient(80deg, #301b0744, #301b07) !important;
-}
-
-.text-light, a {
-  color: #ddd !important;
 }
 
 .card-img-top {

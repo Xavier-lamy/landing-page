@@ -424,21 +424,40 @@ body {
     }
     h1, .h1 {
         font-size: $h1;
+        font-family: $h-font, serif;
     }
     h2, .h2 {
         font-size: $h2;
+        font-family: $h-font, serif;
     }
     h3, .h3 {
         font-size: $h3;
+        font-family: $h-font, serif;
     }
     h4, .h4 {
         font-size: $h4;
+        font-family: $h-font, serif;
     }
     h5, .h5 {
         font-size: $h5;
+        font-family: $h-font, serif;
     }
     h6, .h6 {
         font-size: $h6;
+        font-family: $h-font, serif;
+    }
+    a {
+        text-decoration: none;
+    }
+    ul {
+        list-style: none;
+    }
+    input, textarea {
+        font-size: $p-medium !important;
+        box-shadow: none !important;
+    }
+    .text-light, a, ::placeholder {
+        color: $text !important; 
     }
 }
 
@@ -463,7 +482,7 @@ body {
     color: $text;
     font-size: $p-medium !important;        
     border-style: none !important;
-    border-radius: 0.6em;
+    border-radius: 1.6em;
     box-shadow: none !important;
     &:hover {
         background-color: $button-hover !important;
@@ -480,10 +499,6 @@ body {
 
 .bg-brown {
     background-image: $gradient-brown !important;
-}
-
-.text-light, a {
-    color: $text !important; 
 }
 
 .card-img-top {
