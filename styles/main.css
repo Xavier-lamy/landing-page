@@ -492,6 +492,21 @@ body h6, body .h6 {
   font-family: "Domine", serif;
 }
 
+body .p-lg {
+  font-size: 1.1em !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+body .p-md {
+  font-size: 0.8em !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+body .p-sm, body small {
+  font-size: 0.72em !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+
 body a {
   text-decoration: none;
 }

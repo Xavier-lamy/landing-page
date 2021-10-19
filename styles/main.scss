@@ -446,6 +446,18 @@ body {
         font-size: $h6;
         font-family: $h-font, serif;
     }
+    .p-lg {
+        font-size: $p-large !important;
+        font-family: $p-font, sans-serif !important;        
+    }
+    .p-md {
+        font-size: $p-medium !important;
+        font-family: $p-font, sans-serif !important;
+    }
+    .p-sm, small {
+        font-size: $p-small !important;
+        font-family: $p-font, sans-serif !important;
+    }
     a {
         text-decoration: none;
     }
