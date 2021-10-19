@@ -64,7 +64,7 @@ body {
             transform-origin: bottom right;
             transition: transform 0.3s ease-out;
         }
-        &:hover:after {
+        &:hover:after, &[aria-current="page"]:after {
             transform: scaleX(1);
             transform-origin: bottom left;
         }

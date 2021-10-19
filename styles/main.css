@@ -155,7 +155,7 @@ body .navbar a:after, body .login span:after, body .contacts span:after, body .a
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
-body .navbar a:hover:after, body .login span:hover:after, body .contacts span:hover:after, body .about a:hover:after, body .follow span:hover:after, body .forum-block a:hover:after {
+body .navbar a:hover:after, body .navbar a[aria-current="page"]:after, body .login span:hover:after, body .login span[aria-current="page"]:after, body .contacts span:hover:after, body .contacts span[aria-current="page"]:after, body .about a:hover:after, body .about a[aria-current="page"]:after, body .follow span:hover:after, body .follow span[aria-current="page"]:after, body .forum-block a:hover:after, body .forum-block a[aria-current="page"]:after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transform-origin: bottom left;
