@@ -162,6 +162,12 @@ body .navbar a:hover:after, body .navbar a[aria-current="page"]:after, body .log
           transform-origin: bottom left;
 }
 
+body .tag {
+  background-color: #452b17;
+  padding: 0.5em 1.4em;
+  font-size: 0.72em;
+}
+
 body ul {
   list-style: none;
 }
@@ -203,12 +209,6 @@ body .card {
   margin: 0.5%;
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
-}
-
-body .card .tag {
-  background-color: #452b17;
-  padding: 0.5em 1.4em;
-  font-size: 0.72em;
 }
 
 body .card .card__img {

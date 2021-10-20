@@ -69,7 +69,11 @@ body {
             transform-origin: bottom left;
         }
     }
-
+    .tag {
+        background-color: $primary;
+        padding: 0.5em 1.4em;
+        font-size: $p-small;
+    }
     ul {
         list-style: none;
     }
@@ -99,11 +103,6 @@ body {
         padding: 1.5em;
         margin: 0.5%;
         flex-basis: 32%;
-        .tag {
-            background-color: $primary;
-            padding: 0.5em 1.4em;
-            font-size: $p-small;
-        }
         .card__img {
             width: auto;
             margin-top: 1.2em;
