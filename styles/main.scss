@@ -106,6 +106,7 @@ body {
     input, textarea {
         font-size: $p-medium !important;
         box-shadow: none !important;
+        color: $text !important;
     }
     .text-light, a, ::placeholder {
         color: $text !important; 
