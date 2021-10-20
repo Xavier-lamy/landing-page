@@ -305,9 +305,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   padding: 0em 1%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .top-bar .logo {
@@ -363,7 +362,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1em;
 }
 
 .banner .slogan {
@@ -694,7 +692,7 @@ footer .copyright small {
     padding-left: 9em;
   }
   .banner {
-    padding: 2em;
+    padding: 1em 9em;
   }
   .banner .slogan br {
     display: none;
@@ -812,6 +810,9 @@ footer .copyright small {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .banner .slogan {
+    text-align: center;
+  }
   .banner .searchbar {
     margin-top: 2em;
   }
@@ -886,8 +887,12 @@ footer .copyright small {
     font-size: 2.2em;
   }
   .section-body .card {
-    -ms-flex-preferred-size: 100% !important;
-        flex-basis: 100% !important;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .section-body .card:not(.card-lg) {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .section-body .card .button {
     margin: 0% 25%;

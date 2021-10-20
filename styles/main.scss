@@ -162,7 +162,7 @@ header {
 .top-bar {
     display: flex;
     padding: 0em 1%;        
-    justify-content: space-between;
+    justify-content: space-around;
     .logo {
         margin: 0.5em;
         width: fit-content;
@@ -196,7 +196,6 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1em;
     .slogan {
         line-height: 2em;
         margin: 0em;

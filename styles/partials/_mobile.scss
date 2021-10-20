@@ -67,6 +67,9 @@
     }
     .banner {
         flex-direction: column;
+        .slogan {
+            text-align: center;
+        }
         .searchbar {
             margin-top: 2em;
         }
@@ -127,7 +130,10 @@
         }
     }
     .section-body .card {
-        flex-basis: 100% !important;
+        flex-basis: 100%;
+        &:not(.card-lg) {
+            flex-basis: 100%;
+        }
         .button {
             margin: 0% 25%;
         }
