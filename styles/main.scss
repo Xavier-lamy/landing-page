@@ -1,5 +1,30 @@
 @import 'partials/variables', 'partials/fonts';
 
+/*Bootstrap*/
+// Configuration
+@import "../vendors/bootstrap/scss/functions";
+@import "../vendors/bootstrap/scss/variables";
+@import "../vendors/bootstrap/scss/mixins";
+@import "../vendors/bootstrap/scss/utilities";
+
+// Layout & components
+@import "../vendors/bootstrap/scss/root";
+@import "../vendors/bootstrap/scss/reboot";
+@import "../vendors/bootstrap/scss/type";
+@import "../vendors/bootstrap/scss/images";
+@import "../vendors/bootstrap/scss/containers";
+@import "../vendors/bootstrap/scss/grid";
+@import "../vendors/bootstrap/scss/forms";
+@import "../vendors/bootstrap/scss/buttons";
+@import "../vendors/bootstrap/scss/nav";
+@import "../vendors/bootstrap/scss/navbar";
+@import "../vendors/bootstrap/scss/card";
+// Helpers
+@import "../vendors/bootstrap/scss/helpers";
+// Utilities
+@import "../vendors/bootstrap/scss/utilities/api";
+
+//Common
 /*Animations*/
 @keyframes slide-right {
     from {transform: translate(-250px, 0px);}
