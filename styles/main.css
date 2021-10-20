@@ -131,13 +131,13 @@ body a:hover, body a :active, body a :focus {
   text-decoration: underline;
 }
 
-body .navbar a, body .login span, body .contacts span, body .about a, body .follow span, body .forum-block a {
+body .navbar a, body .login span, body .infos__contacts span, body .infos__about a, body .infos__follow span, body .forums__block a {
   display: inline-block;
   position: relative;
   text-decoration: none;
 }
 
-body .navbar a:after, body .login span:after, body .contacts span:after, body .about a:after, body .follow span:after, body .forum-block a:after {
+body .navbar a:after, body .login span:after, body .infos__contacts span:after, body .infos__about a:after, body .infos__follow span:after, body .forums__block a:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -155,7 +155,7 @@ body .navbar a:after, body .login span:after, body .contacts span:after, body .a
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
-body .navbar a:hover:after, body .navbar a[aria-current="page"]:after, body .login span:hover:after, body .login span[aria-current="page"]:after, body .contacts span:hover:after, body .contacts span[aria-current="page"]:after, body .about a:hover:after, body .about a[aria-current="page"]:after, body .follow span:hover:after, body .follow span[aria-current="page"]:after, body .forum-block a:hover:after, body .forum-block a[aria-current="page"]:after {
+body .navbar a:hover:after, body .navbar a[aria-current="page"]:after, body .login span:hover:after, body .login span[aria-current="page"]:after, body .infos__contacts span:hover:after, body .infos__contacts span[aria-current="page"]:after, body .infos__about a:hover:after, body .infos__about a[aria-current="page"]:after, body .infos__follow span:hover:after, body .infos__follow span[aria-current="page"]:after, body .forums__block a:hover:after, body .forums__block a[aria-current="page"]:after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transform-origin: bottom left;
@@ -189,7 +189,7 @@ body .button:hover, body button:hover {
           transform: scale(1.09);
 }
 
-body .button.button-lg, body button.button-lg {
+body .button.button--lg, body button.button--lg {
   display: block;
   text-align: center;
 }
@@ -211,21 +211,21 @@ body .card .tag {
   font-size: 0.72em;
 }
 
-body .card .card-img {
+body .card .card__img {
   width: auto;
   margin-top: 1.2em;
   overflow: hidden;
   height: 16em;
 }
 
-body .card .card-img img {
+body .card .card__img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-body .card .card-body {
+body .card .card__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,12 +237,12 @@ body .card .card-body {
       align-content: space-between;
 }
 
-body .card .card-body h3 {
+body .card .card__body h3 {
   font-size: 1.2em;
   margin-bottom: 0.5em;
 }
 
-body .card .card-body p {
+body .card .card__body p {
   margin-bottom: 1em;
   text-align: justify;
   line-height: 1.8em;
@@ -250,12 +250,12 @@ body .card .card-body p {
   overflow: hidden;
 }
 
-body .card-lg {
+body .card--lg {
   -ms-flex-preferred-size: 65%;
       flex-basis: 65%;
 }
 
-body .card-lg .button-lg {
+body .card--lg .button--lg {
   margin: 0% 25%;
 }
 
@@ -419,7 +419,7 @@ header {
           flex-direction: column;
 }
 
-.wrapper .content section .section-title {
+.wrapper .content section .section__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,7 +432,7 @@ header {
   margin: 0.5em 2em;
 }
 
-.wrapper .content section .section-body {
+.wrapper .content section .section__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -460,14 +460,14 @@ aside .sidebar:first-child {
   margin-top: 4em;
 }
 
-.sidebar .sidebar-title h2 {
+.sidebar .sidebar__title h2 {
   font-size: 1.4em;
   background-color: #724b2f;
   padding: 0.3em;
   text-align: center;
 }
 
-.sidebar.reactions .comment-block {
+.sidebar.reactions .reactions__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -479,21 +479,21 @@ aside .sidebar:first-child {
   padding-top: 3em;
 }
 
-.sidebar.reactions .comment-block .pseudo {
+.sidebar.reactions .reactions__block .reactions__pseudo {
   font-size: 1.1em;
   font-family: "Domine";
 }
 
-.sidebar.reactions .comment-block .forum-name {
+.sidebar.reactions .reactions__block .reactions__forum {
   font-size: 0.72em;
   margin-top: 0em;
 }
 
-.sidebar.reactions .comment-block .comment {
+.sidebar.reactions .reactions__block .reactions__comment {
   line-height: 2em;
 }
 
-.sidebar.reactions .comment-block .button {
+.sidebar.reactions .reactions__block .button {
   margin-top: 1em;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -501,11 +501,11 @@ aside .sidebar:first-child {
   font-size: 0.72em;
 }
 
-.sidebar.reactions .comment-block:first-child {
+.sidebar.reactions .reactions__block:first-child {
   padding-top: 2em;
 }
 
-.sidebar.reactions .comment-block:last-child {
+.sidebar.reactions .reactions__block:last-child {
   margin-bottom: 1em;
 }
 
@@ -520,16 +520,16 @@ aside .sidebar:first-child {
   line-height: 2em;
 }
 
-.sidebar.forums .forum-block {
+.sidebar.forums .forums__block {
   padding-top: 1em;
 }
 
-.sidebar.forums .forum-block h3 {
+.sidebar.forums .forums__block h3 {
   font-size: 1.2em;
   margin-bottom: 0em;
 }
 
-.sidebar.forums .forum-block ul {
+.sidebar.forums .forums__block ul {
   margin: 0.5em;
 }
 
@@ -540,44 +540,44 @@ aside .sidebar:first-child {
   margin-top: 2em;
 }
 
-.sidebar.contact-form form {
+.sidebar.contactform form {
   margin-top: 2em;
 }
 
-.sidebar.contact-form form .names label, .sidebar.contact-form form .mail label, .sidebar.contact-form form .message label {
+.sidebar.contactform form .contactform__names label, .sidebar.contactform form .contactform__mail label, .sidebar.contactform form .contactform__message label {
   display: none;
 }
 
-.sidebar.contact-form form .names input, .sidebar.contact-form form .names textarea, .sidebar.contact-form form .mail input, .sidebar.contact-form form .mail textarea, .sidebar.contact-form form .message input, .sidebar.contact-form form .message textarea {
+.sidebar.contactform form .contactform__names input, .sidebar.contactform form .contactform__names textarea, .sidebar.contactform form .contactform__mail input, .sidebar.contactform form .contactform__mail textarea, .sidebar.contactform form .contactform__message input, .sidebar.contactform form .contactform__message textarea {
   margin: 0.5em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.sidebar.contact-form form .names input, .sidebar.contact-form form .mail input, .sidebar.contact-form form .message input {
+.sidebar.contactform form .contactform__names input, .sidebar.contactform form .contactform__mail input, .sidebar.contactform form .contactform__message input {
   text-align: center;
   padding: .8em .2em;
 }
 
-.sidebar.contact-form form .names textarea, .sidebar.contact-form form .mail textarea, .sidebar.contact-form form .message textarea {
+.sidebar.contactform form .contactform__names textarea, .sidebar.contactform form .contactform__mail textarea, .sidebar.contactform form .contactform__message textarea {
   padding: .5em;
 }
 
-.sidebar.contact-form form .names {
+.sidebar.contactform form .contactform__names {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.sidebar.contact-form form .names input {
+.sidebar.contactform form .contactform__names input {
   width: 50%;
 }
 
-.sidebar.contact-form form #mail, .sidebar.contact-form form #message {
+.sidebar.contactform form #mail, .sidebar.contactform form #message {
   width: calc(100% - 1em);
 }
 
-.sidebar.contact-form form .validate {
+.sidebar.contactform form .contactform__validate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -678,7 +678,7 @@ footer .copyright small {
   .searchbar form {
     width: 33vw;
   }
-  body .card .card-img, body-lg .card-img {
+  body .card .card__img, body--lg .card__img {
     height: 20em;
   }
   footer {
@@ -725,13 +725,13 @@ footer .copyright small {
     width: 100%;
     margin: 3em 0.3em;
   }
-  aside .sidebar.contact-form .names, aside .sidebar:first-child.contact-form .names {
+  aside .sidebar.contactform .contactform__names, aside .sidebar:first-child.contactform .contactform__names {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  aside .sidebar.contact-form .names input, aside .sidebar:first-child.contact-form .names input {
+  aside .sidebar.contactform .contactform__names input, aside .sidebar:first-child.contactform .contactform__names input {
     width: auto;
   }
   footer .company {
@@ -816,14 +816,14 @@ footer .copyright small {
   .banner .searchbar {
     margin-top: 2em;
   }
-  .section-body .card:not(.card-lg) {
+  .section__body .card:not(.card--lg) {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  .section-body .card-lg {
+  .section__body .card--lg {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -839,7 +839,7 @@ footer .copyright small {
   aside .sidebar, aside .sidebar:first-child {
     width: auto;
   }
-  aside .sidebar.reactions .comment-block, aside .sidebar:first-child.reactions .comment-block {
+  aside .sidebar.reactions .reactions__block, aside .sidebar:first-child.reactions .reactions__block {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -848,7 +848,7 @@ footer .copyright small {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  aside .sidebar.forums .sidebar-content, aside .sidebar:first-child.forums .sidebar-content {
+  aside .sidebar.forums .sidebar__content, aside .sidebar:first-child.forums .sidebar__content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -859,16 +859,16 @@ footer .copyright small {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  aside .sidebar.forums .sidebar-content .forum-block, aside .sidebar:first-child.forums .sidebar-content .forum-block {
+  aside .sidebar.forums .sidebar__content .forums__block, aside .sidebar:first-child.forums .sidebar__content .forums__block {
     width: 50%;
   }
-  aside .sidebar.contact-form .names, aside .sidebar:first-child.contact-form .names {
+  aside .sidebar.contactform .contactform__names, aside .sidebar:first-child.contactform .contactform__names {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  aside .sidebar.contact-form .names input, aside .sidebar:first-child.contact-form .names input {
+  aside .sidebar.contactform .contactform__names input, aside .sidebar:first-child.contactform .contactform__names input {
     width: 50%;
   }
   footer {
@@ -877,27 +877,27 @@ footer .copyright small {
 }
 
 @media (max-width: 600px) {
-  .wrapper .content section .section-title {
+  .wrapper .content section .section__title {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .wrapper .content section .section-title h2 {
+  .wrapper .content section .section__title h2 {
     font-size: 2.2em;
   }
-  .section-body .card {
+  .section__body .card {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-  .section-body .card:not(.card-lg) {
+  .section__body .card:not(.card--lg) {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-  .section-body .card .button {
+  .section__body .card .button {
     margin: 0% 25%;
   }
-  aside .sidebar.reactions .comment-block, aside .sidebar:first-child.reactions .comment-block {
+  aside .sidebar.reactions .reactions__block, aside .sidebar:first-child.reactions .reactions__block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -913,10 +913,10 @@ footer .copyright small {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  footer .infos .follow h3, footer .infos .follow span {
+  footer .infos .infos__follow h3, footer .infos .infos__follow span {
     display: none;
   }
-  footer .infos .follow ul {
+  footer .infos .infos__follow ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -984,10 +984,10 @@ footer .copyright small {
   .searchbar form .button {
     margin: 1em 25%;
   }
-  .card .card-body .button {
+  .card .card__body .button {
     margin: 0em 10%;
   }
-  aside .sidebar.forums .sidebar-content .forum-block {
+  aside .sidebar.forums .sidebar__content .forums__block {
     width: 100%;
   }
   footer .company p br {

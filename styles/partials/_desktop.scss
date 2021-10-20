@@ -6,8 +6,8 @@
         }
     }
     body {
-        .card, &-lg {
-            .card-img {
+        .card, &--lg {
+            .card__img {
                 height: 20em;  
             }
         }

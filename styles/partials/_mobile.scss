@@ -12,8 +12,8 @@
         .sidebar, .sidebar:first-child {
             width: 100%;
             margin: 3em 0.3em;
-            &.contact-form {
-                .names {
+            &.contactform {
+                .contactform__names {
                     flex-direction: column;
                     input {
                         width: auto;
@@ -74,12 +74,12 @@
             margin-top: 2em;
         }
     }
-    .section-body {
-        .card:not(.card-lg) {
+    .section__body {
+        .card:not(.card--lg) {
             flex-basis: 49%;
             order: 2;
         }
-        .card-lg {
+        .card--lg {
             order: 1;
             flex-basis: 100%;
         }
@@ -89,24 +89,24 @@
         .sidebar, .sidebar:first-child {
             width: auto;
             &.reactions {
-                .comment-block {
+                .reactions__block {
                     flex-direction: row;
                     justify-content: space-between;
                 }
             }
             &.forums {
-                .sidebar-content {
+                .sidebar__content {
                     display: flex;
                     flex-flow: row wrap;
                     justify-content: space-around;
-                    .forum-block {
+                    .forums__block {
                         width: 50%;
                     }
                 }
 
             }
-            &.contact-form {
-                .names {
+            &.contactform {
+                .contactform__names {
                     flex-direction: row;
                     input {
                         width: 50%;
@@ -122,16 +122,16 @@
 
 @media (max-width: 600px) {
     .wrapper .content section {
-        .section-title {
+        .section__title {
             flex-direction: column;
             h2 {
                 font-size: $h3;
             }
         }
     }
-    .section-body .card {
+    .section__body .card {
         flex-basis: 100%;
-        &:not(.card-lg) {
+        &:not(.card--lg) {
             flex-basis: 100%;
         }
         .button {
@@ -141,7 +141,7 @@
     aside {
         .sidebar, .sidebar:first-child {
             &.reactions {
-                .comment-block {
+                .reactions__block {
                     flex-direction: column;
                     justify-content: space-between;
                 }
@@ -152,7 +152,7 @@
         .infos {
             text-align: center;
             flex-direction: column-reverse;
-            .follow {
+            .infos__follow {
                 h3, span {
                     display: none;
                 }
@@ -212,13 +212,13 @@
             }
         }
     }
-    .card .card-body {
+    .card .card__body {
         .button {
             margin: 0em 10%;
         }
     }
     aside {
-        .sidebar.forums .sidebar-content .forum-block {
+        .sidebar.forums .sidebar__content .forums__block {
             width: 100%;
         }
     }
