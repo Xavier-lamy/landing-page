@@ -407,4 +407,33 @@ footer {
     }
 }
 
+/*Single*/
+.article__title {
+    h1 {
+        line-height: 1.5em;
+    }
+    .article__tags  {
+        .tag {
+            margin: 0.5em;
+        }
+    }
+}
+
+.article__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.article__text {
+    text-align: justify;
+}
+
+.article__img {
+    align-self: center;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 @import 'partials/desktop', 'partials/mobile';

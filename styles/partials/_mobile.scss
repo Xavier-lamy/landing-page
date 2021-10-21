@@ -49,6 +49,9 @@
 }
 
 @media (max-width: 768px) {
+    .mobile-hidden {
+        display: none;
+    }
     .top-bar {
         flex-wrap: wrap;
         justify-content: space-around;
@@ -117,6 +120,26 @@
     }
     footer {
         padding: 3em;
+    }
+
+    /*Single*/
+    .article__title {
+        display: flex;
+        flex-direction: column;
+        h1 {
+            text-align: center;
+        }
+        .article {
+            &__tags  {
+                align-self: center;
+            }
+            &__meta {
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                text-align: center;
+            }
+        }
     }
 }
 
