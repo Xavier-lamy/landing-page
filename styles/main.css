@@ -127,8 +127,7 @@ body a {
 }
 
 body a:hover, body a :active, body a :focus {
-  color: white;
-  text-decoration: underline;
+  color: #fff;
 }
 
 body .navbar a, body .login span, body .infos__contacts span, body .infos__about a, body .infos__follow span, body .forums__block a {
@@ -703,6 +702,19 @@ footer .copyright small {
 .article__img img {
   width: 100%;
   height: auto;
+}
+
+.related {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.related a {
+  -ms-flex-preferred-size: 33.33333333%;
+      flex-basis: 33.33333333%;
 }
 
 @media screen and (min-width: 1200px) {

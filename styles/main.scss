@@ -43,8 +43,7 @@ body {
         color: $text;
         text-decoration: none;
         &:hover, :active, :focus {
-            color: white;
-            text-decoration: underline;
+            color: $white;
         }
     }
     /*Animation: underline when hover*/
@@ -433,6 +432,14 @@ footer {
     img {
         width: 100%;
         height: auto;
+    }
+}
+
+.related {
+    display: flex;
+    flex-flow: wrap;
+    a {
+        flex-basis: 33.33333333%;
     }
 }
 
